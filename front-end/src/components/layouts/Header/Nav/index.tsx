@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { navData } from "../../../../data/navItem";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { DropDownMenu } from "../../../components/NavMenu";
 import MobMenu from "../../../components/MobMenu";
+import { FaRegUser } from "react-icons/fa";
+import Search from "../../../components/Search/Search";
 
 interface NavBarProps {
   handlShow: () => void;
@@ -33,13 +35,17 @@ const Navbar: React.FC<NavBarProps> = ({ handlShow }) => {
               return <DropDownMenu menu={menu} key={menu.id} />;
             })}
           </ul>
-          <div className="flex">
-            <div className="text-white text-2xl font-OpenSans">Login</div>
+          <ul className="flex">
+            <Search />
+
+            <li className="text-white mx-4 hover:text-primary transition-all duration-100 ease-out">
+              <FaRegUser className="size-5" />
+            </li>
             {/* Responsive Menu */}
-            <div className="lg:hidden flex items-center">
+            <li className="lg:hidden flex items-center">
               <MobMenu Menus={navData} />
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

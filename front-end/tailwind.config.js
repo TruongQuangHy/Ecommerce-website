@@ -22,6 +22,11 @@ export default {
         OpenSans: ["Open Sans", "sans-serif"],
         Noto: ["Open Sans", "serif"],
       },
+      boxShadow: {
+        "inner-custom":
+          "inset 10px 0px 30px rgba(152, 109, 255, 0.3), inset 0px 10px 30px rgba(152, 109, 255, 0.3), inset -10px 0px 30px rgba(152, 109, 255, 0.3), inset 0px -10px 30px rgba(152, 109, 255, 0.3)",
+        "inner-down": "-10px 0px 30px rgba(152, 109, 255, 0.6)",
+      },
     },
   },
   plugins: [],
