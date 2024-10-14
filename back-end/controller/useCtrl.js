@@ -40,4 +40,55 @@ const getAllUser = asyncHandler(async (req, res) => {
     throw new Error(error);
   }
 });
-module.exports = { createUser, loginUser, getAllUser };
+
+const getaUser = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  try {
+    const getaUser = await User.findById(id);
+    res.json({
+      getaUser,
+    });
+  } catch (error) {
+    throw new Error(error);
+  }
+});
+
+const deleteaUser = asyncHandler(async (req, res) => {
+  const { id } = req.params;
+  try {
+    const deleteaUser = await User.findByIdAndDelete(id);
+    res.json({
+      deleteaUser,
+    });
+  } catch (error) {
+    throw new Error(error);
+  }
+});
+
+const updateaUser = asyncHandler(async (req, res) => {
+  const { _id } = req.user;
+  try {
+    const updateaUser = await User.findByIdAndUpdate(
+      _id,
+      {
+        full_name: req?.body?.full_name,
+        email: req?.body?.email,
+        mobile: req?.body?.mobile,
+      },
+      {
+        new: true,
+      }
+    );
+    res.json(updateaUser);
+  } catch (error) {
+    throw new Error(error);
+  }
+});
+module.exports = {
+  createUser,
+  loginUser,
+  getAllUser,
+  getaUser,
+  deleteaUser,
+  updateaUser,
+};
