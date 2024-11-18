@@ -17,6 +17,9 @@ export default {
         primarySec: "#986DFF",
         white: "#FFFFFF",
         box: "#C0C0C0",
+        body: "#1C1C1C",
+        border1: "rgba(255, 255, 255, 1)",
+        border2: "rgba(255, 215, 0, 1)",
       },
       fontFamily: {
         OpenSans: ["Open Sans", "sans-serif"],

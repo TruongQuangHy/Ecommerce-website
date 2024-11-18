@@ -1,5 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import authReducer from "../features/auth/authSlice";
+import userReducer from "../features/user/userSlice";
+import productReducer from "../features/product/productSlice";
+
 // import incomeReducer from "../features/income/incomeSlice";
 // import expenseReducer from "../features/expense/expenseSlice";
 // import transactionReducer from "../features/transaction/transactionSlice";
@@ -10,9 +12,9 @@ import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({
   reducer: {
-    // auth: authReducer,
+    user: userReducer,
+    product: productReducer,
     // cart: cartReducer,
-    // product: productReducer,
     // dashboard: dashboardReducer,
   },
 });

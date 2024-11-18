@@ -5,7 +5,28 @@ export const navData = [
   { id: 3, name: "Company", value: "Company", to: "company" },
   { id: 4, name: "Blog", value: "Blog", to: "blog" },
 ];
-
+export const imgData = [
+  {
+    id: 0,
+    img: "https://mona.media/wp-content/uploads/2023/03/screencapture-office-sup-monamedia-net-2024-05-27-16_50_28-400x1144.png",
+  },
+  {
+    id: 1,
+    img: "https://mona.media/wp-content/uploads/2023/03/screencapture-office-sup-monamedia-net-2024-05-27-16_50_28-400x1144.png",
+  },
+  {
+    id: 2,
+    img: "https://mona.media/wp-content/uploads/2023/03/screencapture-office-sup-monamedia-net-2024-05-27-16_50_28-400x1144.png",
+  },
+  {
+    id: 3,
+    img: "https://mona.media/wp-content/uploads/2023/03/screencapture-office-sup-monamedia-net-2024-05-27-16_50_28-400x1144.png",
+  },
+  {
+    id: 4,
+    img: "https://mona.media/wp-content/uploads/2023/03/screencapture-office-sup-monamedia-net-2024-05-27-16_50_28-400x1144.png",
+  },
+];
 export const cateData = [
   {
     id: 0,
